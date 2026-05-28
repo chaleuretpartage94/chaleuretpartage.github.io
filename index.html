@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO PRIMAIRE -->
+  <title>Chaleur et Partage – Soutien scolaire et lien social au Bois l'Abbé, Chennevières-sur-Marne</title>
+  <meta name="description" content="Association Chaleur et Partage au Bois l'Abbé (Chennevières-sur-Marne / Champigny). Soutien scolaire gratuit, sorties culturelles, activités pour enfants, solidarité de quartier. Faites un don ou devenez bénévole." />
+  <meta name="keywords" content="association Chaleur Partage, Bois l'Abbé, Chennevières-sur-Marne, Champigny-sur-Marne, soutien scolaire, activités enfants, solidarité, bénévole, don, lien social" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Association Chaleur et Partage" />
+  <link rel="canonical" href="https://chaleuretpartage.github.io/" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chaleuretpartage.github.io/" />
+  <meta property="og:title" content="Chaleur et Partage – Association du Bois l'Abbé" />
+  <meta property="og:description" content="Soutien scolaire gratuit, sorties culturelles, solidarité. Une association ancrée au Bois l'Abbé." />
+  <meta property="og:image" content="https://chaleuretpartage.github.io/images/fatoumata.webp" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chaleur et Partage" />
+  <meta name="twitter:description" content="Soutien scolaire gratuit et lien social au Bois l'Abbé." />
+  <meta name="twitter:image" content="https://chaleuretpartage.github.io/images/fatoumata.webp" />
+
+  <!-- SCHEMA.ORG -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"NGO","name":"Chaleur et Partage","url":"https://chaleuretpartage.github.io/","logo":"https://chaleuretpartage.github.io/images/logo.jpg","description":"Association de lien social au Bois l'Abbé, soutien scolaire, sorties culturelles, activités pour enfants.","address":{"@type":"PostalAddress","streetAddress":"1 rue Clement Ader","addressLocality":"Chennevières-sur-Marne","postalCode":"94430","addressCountry":"FR"},"email":"chaleur.et.partage.assoc@gmail.com","telephone":"+33614878398",, "founding date":2017", "sameAs":["https://www.instagram.com/chaleur_et_partage","https://www.facebook.com/chaleuretpartage"]}
+  </script>
+
+  <!-- PRELOAD HERO -->
+  <link rel="preload" as="image" href="images/fatoumata.webp" type="image/webp" />
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- FAVICON : logo de l'association -->
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+
+  <style>
+    :root {
+      --orange:   #E8650A;
+      --orange-d: #C04F05;
+      --yellow:   #F7C22A;
+      --yellow-l: #FDE98A;
+      --cream:    #FFF8F0;
+      --cream-d:  #F5ECE0;
+      --brown:    #2D1500;
+      --brown-m:  #6B3A10;
+      --white:    #FFFFFF;
+      --shadow:   0 4px 24px rgba(45,21,0,0.10);
+      --r:        16px;
+      --fh:       'Fraunces', Georgia, serif;
+      --fb:       'Outfit', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{font-family:var(--fb);background:var(--cream);color:var(--brown);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;display:block;height:auto}
+    a{color:inherit;text-decoration:none}
+    ul{list-style:none}
+
+    /* SKIP LINK */
+    .skip{position:absolute;left:-9999px;top:0;background:var(--orange);color:#fff;padding:.5rem 1rem;z-index:9999}
+    .skip:focus{left:0}
+
+    /* NAV */
+    nav{position:-webkit-sticky;position:sticky;top:0;z-index:200;background:rgba(255,248,240,.96);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(45,21,0,.08);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:68px}
+    .nav-logo{font-family:var(--fh);font-size:1.22rem;font-weight:900;color:var(--orange);display:flex;align-items:center;gap:10px;flex-shrink:0}
+    .nav-logo img{width:38px;height:38px;border-radius:10px;object-fit:contain}
+    .nav-links{display:flex;align-items:center;gap:1.6rem}
+    .nav-links a{font-size:.88rem;font-weight:500;color:var(--brown-m);transition:color .2s;white-space:nowrap}
+    .nav-links a:hover{color:var(--orange)}
+    .btn-don{background:var(--orange);color:var(--white)!important;padding:.48rem 1.25rem;border-radius:50px;font-weight:600;font-size:.86rem;transition:background .2s,transform .15s}
+    .btn-don:hover{background:var(--orange-d);transform:translateY(-1px)}
+    .burger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:4px;cursor:pointer;background:var(--orange);border:none;padding:0;width:42px;height:42px;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.25);-webkit-tap-highlight-color:transparent}
+    .burger span{display:block;width:20px;height:2.5px;background:var(--white);border-radius:2px;transition:all .3s}
+    .burger.open{background:var(--white);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+    .burger.open span{background:var(--brown)}
+    .burger.open span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
+    .burger.open span:nth-child(2){opacity:0}
+    .burger.open span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
+
+    /* ══ HERO — IMAGES PILOTES ═════════════════════════════════════════
+       Principe : aucune hauteur ni ratio calculé manuellement.
+       C'est l'image Fatoumata (colonne droite) qui dicte la hauteur du
+       hero à son ratio naturel. Boislabbe (colonne gauche, en haut) fait
+       de même à son ratio natif. Le cartouche orange sous Boislabbe
+       remplit exactement ce qu'il reste (grid fait que hero-left stretch
+       à la hauteur de hero-right).
+       → Aucune bande noire, aucun rognage, images 100% entières.
+    ══════════════════════════════════════════════════════════════════ */
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      overflow:hidden;
+      align-items:stretch;
+    }
+    /* Colonne gauche : photo en haut, cartouche orange en bas */
+    .hero-left{
+      display:flex;
+      flex-direction:column;
+      min-height:0;
+    }
+    /* Boislabbe ancrée en haut, ratio natif respecté */
+    .hero-photo-bois{
+      width:100%;
+      flex-shrink:0;
+    }
+    .hero-photo-bois img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    /* Cartouche orange : remplit l'espace restant */
+    .hero-text{
+      flex:1;
+      min-height:0;
+      background:linear-gradient(145deg,#2D1500 0%,#7a2e08 40%,#E8650A 100%);
+      padding:clamp(.8rem,2.5vw,2.2rem) clamp(1rem,2.5vw,2.5rem);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      overflow:hidden;
+      position:relative;
+    }
+    .hero-text::before{
+      content:'';position:absolute;
+      top:0;left:0;right:0;height:2px;
+      background:linear-gradient(to right,transparent,rgba(247,194,42,.6),transparent);
+    }
+    /* Fatoumata : étalon de la hauteur du hero, photo entière */
+    .hero-right{
+      overflow:hidden;
+    }
+    .hero-right img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    .hero-ov{display:none}
+    .hero-ct{display:contents}
+    .hero-badge{display:none}
+    /* Tailles de texte qui scalent avec la fenêtre */
+    .hero-title{font-family:var(--fh);font-size:clamp(1.2rem,2.8vw,3rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:.5em}
+    .hero-title em{color:var(--yellow);font-style:normal}
+    .hero-sub{font-size:clamp(.72rem,1.1vw,.97rem);color:rgba(255,255,255,.86);margin-bottom:1em;font-weight:300;line-height:1.55;display:none} /* caché si peu de place */
+    .hero-ctas{display:flex;gap:.6rem;flex-wrap:wrap}
+    /* Réafficher le sous-titre quand la zone texte est suffisamment haute */
+    @media(min-width:900px){ .hero-sub{display:block} }
+    .btn-p{display:inline-block;background:var(--orange);color:var(--white);padding:.86rem 2rem;border-radius:50px;font-size:.95rem;font-weight:600;box-shadow:0 8px 28px rgba(232,101,10,.45);transition:background .2s,transform .15s,box-shadow .2s;-webkit-tap-highlight-color:transparent}
+    .btn-p:hover{background:var(--orange-d);transform:translateY(-2px);box-shadow:0 12px 36px rgba(232,101,10,.55)}
+    .btn-g{display:inline-block;background:rgba(255,255,255,.14);color:var(--white);border:1.5px solid rgba(255,255,255,.38);padding:.86rem 2rem;border-radius:50px;font-size:.95rem;font-weight:500;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);transition:background .2s;-webkit-tap-highlight-color:transparent}
+    .btn-g:hover{background:rgba(255,255,255,.24)}
+
+    /* STATS */
+    .stats{background:var(--white);border-bottom:1px solid rgba(45,21,0,.07)}
+    .stats-in{max-width:1200px;margin:0 auto;padding:2rem 2rem;display:flex;flex-wrap:wrap}
+    .stat{flex:1 1 160px;text-align:center;padding:1rem;border-right:1px solid var(--cream-d)}
+    .stat:last-child{border-right:none}
+    .stat-n{font-family:var(--fh);font-size:2.6rem;font-weight:900;color:var(--orange);line-height:1;display:block}
+    .stat-l{font-size:.82rem;color:var(--brown-m);margin-top:.22rem}
+
+    /* LAYOUT HELPERS */
+    section{padding:5rem 2rem}
+    .cnt{max-width:1200px;margin:0 auto}
+    .ey{font-size:.75rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--orange);margin-bottom:.65rem}
+    .h2{font-family:var(--fh);font-size:clamp(1.85rem,4vw,2.85rem);font-weight:900;line-height:1.15;margin-bottom:.95rem}
+    .lead{font-size:1.04rem;color:var(--brown-m);max-width:540px;margin-bottom:2.4rem}
+    .g2{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+
+    /* SOUTIEN : 2 photos des locaux empilées, format paysage, agrandies */
+    .s-imgs{display:grid;grid-template-columns:1fr;gap:14px}
+    .s-loc{border-radius:12px;overflow:hidden;aspect-ratio:3/2}
+    .s-loc img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+    .badge-star{display:inline-flex;align-items:center;gap:6px;background:var(--orange);color:#fff;font-size:.73rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.33rem .88rem;border-radius:50px;margin-bottom:.9rem}
+
+    /* MISSION */
+    .mission{background:var(--cream-d)}
+    .m-img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5}
+    .m-img img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+    .vals{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin-top:1.7rem}
+    .val{background:var(--white);border-radius:12px;padding:1.1rem}
+    .vi{font-size:1.35rem;margin-bottom:.35rem}
+    .vt{font-weight:600;font-size:.91rem;margin-bottom:.12rem}
+    .vd{font-size:.79rem;color:var(--brown-m)}
+
+    /* ACTIONS */
+    .actions{background:var(--white)}
+    .ag{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.35rem}
+    .ac{background:var(--cream);border-radius:var(--r);overflow:hidden;transition:transform .25s,box-shadow .25s}
+    .ac:hover{transform:translateY(-5px);box-shadow:0 14px 40px rgba(45,21,0,.12)}
+    .ai{aspect-ratio:16/10;overflow:hidden;background:var(--cream-d)}
+    .ai img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+    .ab{padding:1.35rem}
+    .tag{display:inline-block;background:var(--yellow-l);color:var(--orange-d);font-size:.69rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.2rem .68rem;border-radius:50px;margin-bottom:.65rem}
+    .at{font-family:var(--fh);font-size:1.18rem;font-weight:700;margin-bottom:.45rem;line-height:1.25}
+    .ad{font-size:.87rem;color:var(--brown-m);line-height:1.6}
+
+    /* GALERIE */
+    .galerie{background:var(--brown);padding:5rem 2rem}
+    .galerie .ey{color:var(--yellow)}
+    .galerie .h2{color:var(--white)}
+    .galerie .lead{color:rgba(255,255,255,.6);margin-bottom:2.5rem}
+    .gg{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:185px;gap:10px}
+    .gi{border-radius:12px;overflow:hidden;position:relative;cursor:pointer}
+    .gi img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+    .gtall{grid-row:span 2}
+    .gwide{grid-column:span 2}
+    .gov{position:absolute;inset:0;background:linear-gradient(to top,rgba(45,21,0,.55),transparent 60%);opacity:0;transition:opacity .3s}
+    .gi:hover .gov{opacity:1}
+
+    /* (bloc .s-imgs défini plus haut — paysage, une colonne) */
+
+    /* ACTUALITES */
+    .actu{background:var(--white)}
+    /* ══════════════════════════════════════════════════════════════════
+       COMMENT AJOUTER UNE ACTUALITE :
+       Dupliquez le bloc <article class="actu-card"> dans le HTML
+       et modifiez la date, le titre, le texte (et l'image si besoin).
+    ══════════════════════════════════════════════════════════════════ */
+    .actu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+    .actu-card{background:var(--cream);border-radius:var(--r);overflow:hidden;border:1px solid var(--cream-d);transition:transform .25s,box-shadow .25s}
+    .actu-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(45,21,0,.10)}
+    .actu-img{aspect-ratio:16/9;overflow:hidden;background:var(--cream-d)}
+    .actu-img img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+    /* Variante : image affichée entière (aucun rognage) */
+    .actu-img.fit-contain{aspect-ratio:4/3;background:var(--brown)}
+    .actu-img.fit-contain img{-o-object-fit:contain;object-fit:contain}
+    .actu-body{padding:1.4rem}
+    .actu-date{font-size:.74rem;font-weight:600;color:var(--brown-m);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem}
+    .actu-title{font-family:var(--fh);font-size:1.15rem;font-weight:700;margin-bottom:.5rem;line-height:1.3;color:var(--brown)}
+    .actu-text{font-size:.88rem;color:var(--brown-m);line-height:1.65}
+    .actu-tag{display:inline-block;background:var(--yellow-l);color:var(--orange-d);font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.18rem .65rem;border-radius:50px;margin-bottom:.6rem}
+
+    /* DON */
+    .don{background:linear-gradient(140deg,var(--orange-d) 0%,var(--orange) 55%,#F08C20 100%);text-align:center;padding:7rem 2rem;position:relative;overflow:hidden}
+    .don .ey{color:var(--yellow-l)}
+    .don .h2{color:var(--white);max-width:560px;margin:0 auto .75rem}
+    .don .lead{color:rgba(255,255,255,.82);margin:0 auto 2.7rem}
+    .amounts{display:grid;grid-template-columns:repeat(4,1fr);gap:.85rem;max-width:720px;margin:0 auto 2.4rem}
+    .ab2{background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.3);color:#fff;border-radius:14px;padding:1.05rem 1rem;cursor:pointer;transition:background .2s,border-color .2s,transform .15s;font-family:var(--fb);-webkit-tap-highlight-color:transparent;text-align:center}
+    .ab2:hover,.ab2.active{background:rgba(255,255,255,.26);border-color:rgba(255,255,255,.7);transform:translateY(-2px)}
+    .mn{font-family:var(--fh);font-size:1.85rem;font-weight:900;display:block;line-height:1.1}
+    .imp{font-size:.75rem;opacity:.82;margin-top:.22rem}
+    .btn-ha{display:inline-block;background:var(--white);color:var(--orange-d);padding:.95rem 2.7rem;border-radius:50px;font-size:1rem;font-weight:700;box-shadow:0 8px 30px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s}
+    .btn-ha:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(0,0,0,.25)}
+    .don-note{margin-top:1.3rem;font-size:.79rem;color:rgba(255,255,255,.6)}
+    .don-note a{color:rgba(255,255,255,.82);text-decoration:underline}
+
+    /* BENEVOLE */
+    .benevole{background:var(--cream-d)}
+    .roles{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin:1.8rem 0}
+    .role{background:var(--white);border-radius:12px;padding:1.05rem;border-left:3px solid var(--orange)}
+    .rt{font-weight:600;font-size:.91rem;margin-bottom:.18rem}
+    .rd{font-size:.79rem;color:var(--brown-m)}
+    .bform{background:var(--white);border-radius:var(--r);padding:2.4rem;box-shadow:var(--shadow)}
+    .bform h3{font-family:var(--fh);font-size:1.32rem;font-weight:700;margin-bottom:1.35rem}
+
+    /* FORMULAIRES */
+    .fg{margin-bottom:1.05rem}
+    .fg label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.32rem;color:var(--brown-m)}
+    .fg input,.fg select,.fg textarea{width:100%;padding:.72rem .92rem;border:1.5px solid rgba(45,21,0,.13);border-radius:10px;background:var(--cream);font-family:var(--fb);font-size:.91rem;color:var(--brown);outline:none;transition:border-color .2s,background .2s;-webkit-appearance:none;appearance:none}
+    .fg input:focus,.fg select,.fg textarea:focus{border-color:var(--orange);background:var(--white)}
+    .fg textarea{height:108px;resize:vertical}
+    .btn-sub{width:100%;background:var(--orange);color:#fff;padding:.86rem;border:none;border-radius:10px;font-family:var(--fb);font-size:.95rem;font-weight:600;cursor:pointer;transition:background .2s;-webkit-tap-highlight-color:transparent}
+    .btn-sub:hover{background:var(--orange-d)}
+
+    /* CONTACT */
+    .contact{background:var(--white)}
+    .cform{background:var(--cream);border-radius:var(--r);padding:2.4rem}
+    .cform h3{font-family:var(--fh);font-size:1.32rem;font-weight:700;margin-bottom:1.35rem}
+    .citems{margin-top:1.8rem;display:flex;flex-direction:column;gap:1rem}
+    .ci{display:flex;align-items:flex-start;gap:.85rem}
+    .cico{width:42px;height:42px;background:var(--cream-d);border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+    .cl{font-size:.75rem;color:var(--brown-m);text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+    .cv{font-size:.93rem;color:var(--brown);margin-top:.08rem}
+    .cv a{color:var(--orange)}
+    .socrow{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:1.7rem}
+    .sb{display:inline-flex;align-items:center;gap:7px;background:var(--cream);border:1px solid var(--cream-d);padding:.52rem 1.05rem;border-radius:50px;font-size:.84rem;font-weight:500;transition:background .2s,border-color .2s}
+    .sb:hover{background:var(--yellow-l);border-color:var(--yellow)}
+
+    /* MENTIONS */
+    #mentions{background:var(--cream-d);border-top:3px solid var(--orange)}
+    .mi{max-width:1000px}
+    .mi h2{font-family:var(--fh);font-size:1.85rem;margin-bottom:1.7rem}
+    .mi h3{font-size:.98rem;font-weight:600;color:var(--orange);margin:1.5rem 0 .38rem}
+    .mi h3:first-of-type{margin-top:0}
+    .mi p{font-size:.9rem;color:var(--brown-m);margin-bottom:.65rem}
+    .mi-cols{display:grid;grid-template-columns:1fr 1fr;gap:2rem 3rem;column-rule:1px solid rgba(45,21,0,.1)}
+    .mi-cols > div{break-inside:avoid}
+
+    /* FOOTER */
+    footer{background:var(--brown);color:rgba(255,255,255,.62);padding:3.5rem 2rem 2rem}
+    .fin{max-width:1200px;margin:0 auto}
+    .ftop{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding-bottom:2.4rem;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:1.7rem}
+    .fbrand .nav-logo{color:#fff;margin-bottom:.85rem}
+    .fbrand p{font-size:.87rem;max-width:270px;line-height:1.65}
+    .fc h4{color:#fff;font-size:.77rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin-bottom:.85rem}
+    .fc li{margin-bottom:.42rem}
+    .fc a{font-size:.86rem;transition:color .2s}
+    .fc a:hover{color:var(--yellow)}
+    .fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;font-size:.79rem}
+    .fbot a{color:rgba(255,255,255,.45);transition:color .2s}
+    .fbot a:hover{color:var(--yellow)}
+
+    /* HISTOIRE DU BOIS L'ABBE */
+    .histo-box{background:var(--white);border-radius:var(--r);padding:3rem;margin-bottom:5rem;border:1px solid rgba(45,21,0,.08)}
+    .histo-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+
+    /* ANIMATIONS */
+    .fi{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+    .fi.vis{opacity:1;transform:translateY(0)}
+
+    /* RESPONSIVE */
+    @media(max-width:960px){
+      .hero{grid-template-columns:1fr;height:auto}
+      .hero-text{padding:1.5rem 1.5rem 2rem}
+      .g2,.benevole .g2{grid-template-columns:1fr;gap:2.5rem}
+      .gg{grid-template-columns:repeat(2,1fr)}
+      .gwide,.gtall{grid-column:span 1;grid-row:span 1}
+      .gg .gi:last-child{grid-column:span 2}
+      .ftop{grid-template-columns:1fr}
+    }
+    @media(max-width:700px){
+      nav{padding:0 1.2rem}
+      .nav-links{display:none;flex-direction:column;gap:0;position:fixed;top:68px;left:0;right:0;background:var(--cream);box-shadow:0 8px 24px rgba(0,0,0,.09);max-height:calc(100vh - 68px);overflow-y:auto}
+      .nav-links.open{display:flex}
+      .nav-links li{border-bottom:1px solid var(--cream-d)}
+      .nav-links a{display:block;padding:1rem 1.5rem;font-size:1rem}
+      .btn-don{margin:.75rem 1.5rem 1rem;display:inline-block}
+      .burger{display:flex}
+      section{padding:3.5rem 1.2rem}
+      .stat{border-right:none;border-bottom:1px solid var(--cream-d)}
+      .stat:last-child{border-bottom:none}
+      .gg{grid-template-columns:1fr 1fr;grid-auto-rows:140px}
+      .vals,.roles{grid-template-columns:1fr}
+      .s-imgs{grid-template-columns:1fr}
+      .actu-grid{grid-template-columns:1fr}
+
+      /* Histoire Bois l'Abbé : 1 seule colonne, padding réduit, fond distinct */
+      .histo-box{padding:1.5rem;margin-bottom:3rem;background:var(--white)}
+      .histo-grid{grid-template-columns:1fr;gap:0}
+
+      /* Galerie : (dernière photo déjà gérée dans le media 960px) */
+
+      /* Mentions légales : 1 seule colonne en smartphone */
+      .mi-cols{grid-template-columns:1fr;gap:0}
+
+      /* Dons : 2 colonnes en smartphone (2x2 au lieu de 4x1) */
+      .amounts{grid-template-columns:1fr 1fr}
+
+      /* Soutien scolaire : texte AVANT les photos en smartphone */
+      #soutien .s-imgs{order:2}
+
+      /* Footer : 2 colonnes en smartphone + interligne resserré */
+      .ftop{grid-template-columns:1fr 1fr;gap:1.8rem;padding-bottom:1.8rem;margin-bottom:1.3rem}
+      .fbrand{grid-column:1 / -1}
+      .fbrand p{max-width:none;font-size:.85rem;line-height:1.5}
+      .fc h4{font-size:.72rem;margin-bottom:.6rem}
+      .fc li{margin-bottom:.2rem}
+      .fc a{font-size:.82rem;line-height:1.35}
+      footer{padding:2.5rem 1.2rem 1.5rem}
+
+      /* Appel à bénévoles plus démarqué en smartphone */
+      .benevole{background:linear-gradient(135deg,#2D1500 0%,#6B3A10 100%);color:var(--white);position:relative;overflow:hidden}
+      .benevole::before{content:'';position:absolute;top:-80px;right:-80px;width:280px;height:280px;background:radial-gradient(circle,rgba(247,194,42,.2) 0%,transparent 70%);border-radius:50%;pointer-events:none;z-index:0}
+      .benevole .cnt{position:relative;z-index:1}
+      .benevole .ey{color:var(--yellow)}
+      .benevole .h2{color:var(--white)}
+      .benevole p{color:rgba(255,255,255,.85)}
+      .benevole .role{background:rgba(255,255,255,.1);border-left-color:var(--yellow)}
+      .benevole .rt{color:var(--white)}
+      .benevole .rd{color:rgba(255,255,255,.7)}
+      .benevole .bform{background:var(--white);color:var(--brown)}
+      .benevole .bform label{color:var(--brown-m)}
+      .benevole .bform p{color:var(--brown-m)}
+    }
+  </style>
+</head>
+<body>
+
+<a href="#soutien" class="skip">Aller au contenu principal</a>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Navigation principale">
+  <a href="#accueil" class="nav-logo" aria-label="Chaleur et Partage – accueil">
+    <img src="images/logo.png" alt="Logo Chaleur et Partage" width="38" height="38"
+         onerror="this.outerHTML='<span style=&quot;width:38px;height:38px;border-radius:10px;background:#E8650A;color:white;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0&quot;>&#9829;</span>'" />
+    Chaleur et Partage
+  </a>
+
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-menu">
+    <li><a href="#mission">Notre mission</a></li>
+    <li><a href="#actualites">Actualités</a></li>
+    <li><a href="#soutien">Soutien scolaire</a></li>
+    <li><a href="#galerie">Galerie</a></li>
+    <li><a href="#benevole">Devenir bénévole</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#don" class="btn-don">❤ Faire un don</a></li>
+  </ul>
+</nav>
+
+
+<!-- HERO -->
+<header id="accueil" class="hero" role="banner">
+
+  <!-- Colonne gauche : boislabbe (haut) + texte orangé (bas) -->
+  <div class="hero-left">
+    <div class="hero-photo-bois">
+      <img src="images/boislabbe.webp"
+           alt="Le quartier Bois l'Abbé, Chennevières-sur-Marne"
+           width="1080" height="1440"
+           fetchpriority="high"
+           decoding="async" />
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-title">Ensemble,<br>on fait<br><em>la différence</em></h1>
+      <p class="hero-sub">Association de lien social, de soutien scolaire et de partage culturel au cœur du Bois l'Abbé.</p>
+      <div class="hero-ctas">
+        <a href="#don" class="btn-p">❤ Soutenir l'association</a>
+        <a href="#mission" class="btn-g">Découvrir →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colonne droite : Fatoumata, entière, à sa proportion naturelle -->
+  <div class="hero-right">
+    <img src="images/fatoumata.webp"
+         alt="Fatoumata, enfant du quartier Bois l'Abbé"
+         width="1080" height="1440"
+         fetchpriority="high"
+         decoding="async" />
+  </div>
+
+</header>
+
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-in">
+    <div class="stat"><span class="stat-n">42</span><span class="stat-l">Enfants accompagnés</span></div>
+    <div class="stat"><span class="stat-n">26</span><span class="stat-l">Bénévoles engagés</span></div>
+    <div class="stat"><span class="stat-n">30+</span><span class="stat-l">Evenements organisés</span></div>
+    <div class="stat"><span class="stat-n">2017</span><span class="stat-l">Année de création</span></div>
+  </div>
+</div>
+
+
+<main>
+
+<!-- ═══ MISSION + NOS ACTIONS ═══ -->
+<section id="mission" class="mission">
+  <div class="cnt">
+
+    <!-- Qui sommes-nous : prose seule, sans photo -->
+    <div style="max-width:760px;margin:0 auto 4rem">
+      <p class="ey">Qui sommes-nous</p>
+      <h2 class="h2">Chaleur et Partage, depuis 2017</h2>
+      <p style="color:var(--brown-m);margin-bottom:1.1rem">Fondée en 2017, Chaleur et Partage est une association loi 1901 ancrée au cœur du quartier Bois l'Abbé, à cheval sur les communes de Chennevières-sur-Marne et de Champigny-sur-Marne. Née de la volonté d'habitants engagés, elle répond à un constat simple : le lien social se construit dans les actes du quotidien, dans le partage et dans l'ouverture.</p>
+      <p style="color:var(--brown-m);margin-bottom:1.1rem">Nous croyons profondément que chaque enfant, chaque famille, mérite d'accéder à la culture, au sport et à la convivialité, quels que soient les moyens. C'est pourquoi nous proposons des activités gratuites ou accessibles à tous, portées par <strong>26 bénévoles engagés</strong> et une salariée à leurs côtés.</p>
+      <p style="color:var(--brown-m);margin-bottom:1.1rem">Notre force, c'est la diversité de nos actions : du soutien scolaire hebdomadaire aux grandes fêtes de quartier, des sorties culturelles aux ateliers de jardinage, des soirées parentalité aux repas partagés. Chaque initiative est pensée pour tisser des liens durables, favoriser l'épanouissement des plus jeunes et renforcer la solidarité de proximité.</p>
+      <p style="color:var(--brown-m)">En près de dix ans d'existence, l'association a accompagné plus de 200 familles, suivi <strong>42 enfants</strong> dans leur parcours scolaire et organisé plus de 30 événements. Cette dynamique, nous la devons à l'engagement de nos bénévoles et à la confiance que nous accordent les habitants du quartier.</p>
+    </div>
+
+    <!-- Présentation du Bois l'Abbé — données Wikipedia -->
+    <div class="histo-box">
+      <p class="ey">Le quartier</p>
+      <h2 class="h2" style="max-width:none">Le Bois l'Abbé</h2>
+      <div class="histo-grid">
+        <div>
+          <p style="color:var(--brown-m);margin-bottom:1.1rem">Le Bois l'Abbé est un grand ensemble à 76 % de logements sociaux (HLM), à cheval sur les communes de Champigny-sur-Marne et de Chennevières-sur-Marne, en Val-de-Marne. Sa construction débute après la délivrance d'un permis de construire le 26 avril 1965 ; le quartier voit le jour en 1968, conçu par les architectes-urbanistes Henry-Charles Delacroix, François Delage, Noël Le Maresquier et Clément Tambuté. Au cœur du quartier s'élève la tour Rodin, haute de 93 mètres et 29 étages, qui accueille 226 logements.</p>
+          <p style="color:var(--brown-m);margin-bottom:1.1rem">En 2018, le quartier compte <strong>11 914 habitants</strong> sur une superficie de 59 hectares, ce qui en fait l'un des quartiers les plus densément peuplés de la région. La population y est jeune, avec un âge moyen de 34 ans, et composée majoritairement d'employés et d'ouvriers. Le revenu moyen des ménages s'établit à environ 2 050 euros par mois, reflet des fragilités sociales que le quartier doit affronter.</p>
+          <p style="color:var(--brown-m)">Depuis les années 2000, le Bois l'Abbé bénéficie de deux programmes de rénovation urbaine (ANRU 1 et ANRU 2) représentant au total près de <strong>450 millions d'euros</strong> d'investissement — le plus important chantier de rénovation urbaine du Val-de-Marne et le 3e d'Île-de-France. Ces travaux visent à désenclaver et transformer profondément le cadre de vie des habitants.</p>
+        </div>
+        <div>
+          <p style="color:var(--brown-m);margin-bottom:1.1rem">Le Bois l'Abbé a vu passer ou grandir des personnalités qui ont marqué leur domaine. <strong>Aliou Cissé</strong> et <strong>Djamel Belmadi</strong>, tous deux devenus sélectionneurs nationaux après leur carrière de footballeurs internationaux, sont issus du quartier. <strong>Thierry Marx</strong>, chef cuisinier de renommée internationale, y a également ses racines.</p>
+          <p style="color:var(--brown-m);margin-bottom:1.1rem">Le quartier est aussi un lieu de création culturelle intense. Le film <strong><em>Banlieusards</em></strong> (Netflix, 2019), réalisé par Leïla Sy et le rappeur Kery James, y a été tourné en grande partie avec une soixantaine d'habitants en figurants — une suite, <em>Banlieusards 2</em>, y a également été tournée en 2022 (diffusée en 2023). Le clip <strong><em>C'est cuit</em></strong> d'Aya Nakamura a aussi été filmé dans le quartier, tout comme des productions de Kery James, Maes et L2B.</p>
+          <p style="color:var(--brown-m)">C'est dans ce territoire riche, complexe et en mutation que Chaleur et Partage a choisi de s'engager — convaincu que chaque habitant mérite un cadre associatif à la hauteur de ses ambitions.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ce que nous faisons -->
+    <p class="ey">Ce que nous faisons</p>
+    <h2 class="h2" style="max-width:none">Nos actions au quotidien</h2>
+    <p class="lead">Des projets concrets, portés par des bénévoles passionnés, pour et avec les habitants du quartier.</p>
+    <div class="ag">
+      <article class="ac fi">
+        <div class="ai"><img src="images/sortiemacval.webp" alt="Sortie au MAC VAL" loading="lazy" width="560" height="350" /></div>
+        <div class="ab"><span class="tag">Culture</span><h3 class="at">Sorties culturelles</h3><p class="ad">Musées, théâtre, expositions… Nous emmenons les enfants découvrir des univers qui leur ouvrent l'esprit. Parce que l'art est pour tous.</p></div>
+      </article>
+      <article class="ac fi">
+        <div class="ai"><img src="images/animationconte.webp" alt="Animation conte pour les enfants" loading="lazy" width="560" height="350" /></div>
+        <div class="ab"><span class="tag">Créativité</span><h3 class="at">Ateliers et animations</h3><p class="ad">Contes, jardinage, arts plastiques… Des espaces d'expression et de découverte pour les plus jeunes, animés avec passion.</p></div>
+      </article>
+      <article class="ac fi">
+        <div class="ai"><img src="images/thiepvoisin.webp" alt="Repas partagé avec plats du monde" loading="lazy" width="560" height="350" /></div>
+        <div class="ab"><span class="tag">Convivialité</span><h3 class="at">Repas et fêtes de quartier</h3><p class="ad">Repas partagés, fêtes en plein air, pique-niques collectifs : la convivialité et le vivre-ensemble au cœur de tout.</p></div>
+      </article>
+      <article class="ac fi">
+        <div class="ai"><img src="images/fetenoel1.webp" alt="Fête de Noël solidaire pour les enfants" loading="lazy" width="560" height="350" /></div>
+        <div class="ab"><span class="tag">Solidarité</span><h3 class="at">Noël solidaire</h3><p class="ad">Chaque année, nous offrons des cadeaux à tous les enfants du quartier pour que la magie de Noël soit partagée, sans exception.</p></div>
+      </article>
+      <article class="ac fi">
+        <div class="ai"><img src="images/projetjardins.webp" alt="Jardins partagés dans le quartier" loading="lazy" width="560" height="350" /></div>
+        <div class="ab"><span class="tag">Environnement</span><h3 class="at">Jardins partagés</h3><p class="ad">Un projet collectif autour du jardinage urbain pour sensibiliser aux enjeux écologiques et renforcer les liens entre voisins.</p></div>
+      </article>
+      <article class="ac fi">
+        <div class="ai"><img src="images/coupedefootball.webp" alt="Tournoi de football" loading="lazy" width="560" height="350" style="object-position:center top" /></div>
+        <div class="ab"><span class="tag">Sport</span><h3 class="at">Activités sportives</h3><p class="ad">Tournois, jeux collectifs, découverte sportive pour développer l'esprit d'équipe, la confiance et le fair-play.</p></div>
+      </article>
+      <article class="ac fi">
+        <div class="ai"><img src="images/repasdesvoisins.webp" alt="Soirée parentalité, débat et repas parents-enfants" loading="lazy" width="560" height="350" /></div>
+        <div class="ab"><span class="tag">Parentalité</span><h3 class="at">Soirées parentalité</h3><p class="ad">Une fois par trimestre, nous réunissons parents et enfants autour d'un débat sur l'éducation suivi d'un repas convivial. Un espace de parole bienveillant pour partager les questionnements du quotidien.</p></div>
+      </article>
+      <article class="ac fi">
+        <div class="ai"><img src="images/terrainneige.webp" alt="Collecte de déchets dans le quartier" loading="lazy" width="560" height="350" /></div>
+        <div class="ab"><span class="tag">Environnement</span><h3 class="at">Collecte de déchets</h3><p class="ad">Mobilisés pour un quartier propre, nous organisons des ramassages collectifs avec les habitants. Un geste concret pour l'environnement et pour la fierté de notre cadre de vie commun.</p></div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══ ACTUALITES ═══
+     POUR AJOUTER une actualité : copiez un bloc <article class="actu-card fi"> et modifiez-le.
+     POUR SUPPRIMER : effacez le bloc <article> complet.
+     Triez du plus récent au plus ancien.
+═══════════════════════════════════════════════════════════════════ -->
+<section id="actualites" class="actu">
+  <div class="cnt">
+    <p class="ey">Nos dernières nouvelles</p>
+    <h2 class="h2">Actualités</h2>
+    <p class="lead">Retrouvez ici toutes les nouvelles de l'association. Rubrique mise à jour régulièrement.</p>
+    <div class="actu-grid">
+
+      <article class="actu-card fi">
+        <div class="actu-img"><img src="images/chasseauxoeufs.webp" alt="Chasse aux oeufs de Pâques 2025" loading="lazy" /></div>
+        <div class="actu-body">
+          <div class="actu-date">Avril 2025</div>
+          <span class="actu-tag">Evenement</span>
+          <h3 class="actu-title">La Chasse aux oeufs 2026</h3>
+          <p class="actu-text">La mairie a organisé sa traditionnelle chasse aux œufs de Pâques. L'association était présente et a proposé des animations et activités pour les enfants du quartier. Un beau moment de partage entre familles.</p>
+        </div>
+      </article>
+
+      <article class="actu-card fi">
+        <div class="actu-img"><img src="images/sortiemacval.webp" alt="Sortie au MAC VAL" loading="lazy" /></div>
+        <div class="actu-body">
+          <div class="actu-date">Juin 2026</div>
+          <span class="actu-tag">Culture</span>
+          <h3 class="actu-title">Sortie au MAC VAL avec nos jeunes</h3>
+          <p class="actu-text">Nos jeunes ont visité le Musée d'Art Contemporain du Val-de-Marne. Une découverte riche en émotions, animée par les équipes de médiation du musée.</p>
+        </div>
+      </article>
+
+      <article class="actu-card fi">
+        <div class="actu-img fit-contain"><img src="images/fetenoel3.webp" alt="Bénévoles en action lors d'une fête" loading="lazy" /></div>
+        <div class="actu-body">
+          <div class="actu-date">Décembre 2025</div>
+          <span class="actu-tag">Fête</span>
+          <h3 class="actu-title">Le Noël de l'association</h3>
+          <p class="actu-text">Chaleur et Partage a organisé sa fête de Noël pour les enfants du quartier. Au programme : animations, bonne humeur et remise de cadeaux pour que chaque enfant reparte avec un souvenir de cette soirée festive.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ SOUTIEN SCOLAIRE ═══ -->
+<section id="soutien" class="soutien">
+  <div class="cnt">
+    <div class="g2">
+      <div class="s-imgs fi">
+        <div class="s-loc">
+          <img src="images/local1.webp" alt="Salle de soutien scolaire, vue générale" loading="lazy" width="480" height="640" />
+        </div>
+        <div class="s-loc">
+          <img src="images/local2.webp" alt="Espace de travail et ressources pédagogiques" loading="lazy" width="480" height="640" />
+        </div>
+      </div>
+      <div class="fi">
+        <span class="badge-star">⭐ Notre activite principale</span>
+        <p class="ey">Education &amp; accompagnement</p>
+        <h2 class="h2">Le soutien scolaire, cœur de notre action</h2>
+        <p style="color:var(--brown-m);margin-bottom:1.1rem">Depuis sa création en 2017, Chaleur et Partage place la réussite éducative au premier rang de ses engagements. Nous accueillons <strong>42 enfants</strong> du quartier pour des séances d'aide aux devoirs dans un cadre bienveillant et stimulant, encadrés par <strong>26 bénévoles</strong> et une salariée dédiée.</p>
+        <p style="color:var(--brown-m);margin-bottom:1.1rem">Notre conviction : chaque enfant mérite une chance égale de progresser, quelle que soit sa situation familiale.</p>
+        <p style="color:var(--brown-m);margin-bottom:1.1rem">Concrètement, nous proposons une <strong>aide aux devoirs</strong> encadrée par des bénévoles qualifiés, avec un <strong>suivi personnalisé</strong> adapté à chaque niveau. Les séances se déroulent dans un <strong>espace équipé</strong> de matériel pédagogique et numérique, et l'accueil est <strong>entièrement gratuit</strong> pour toutes les familles du quartier.</p>
+        <div style="margin-top:2rem"><a href="#benevole" class="btn-p">Rejoindre l'équipe bénévole</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ GALERIE ═══ -->
+<section id="galerie" class="galerie">
+  <div class="cnt">
+    <p class="ey">Nos moments</p>
+    <h2 class="h2">La vie de l'association</h2>
+    <p class="lead">Quelques instants précieux de notre quotidien.</p>
+    <!--
+      GRILLE : 4 colonnes × 3 rangées = 12 cellules.
+      Contenu : 10 photos normales (1 cellule chacune) + 1 photo "gwide" (2 cellules) = 12 cellules pile.
+      Pour garder la grille équilibrée :
+        – 11 photos + 1 gwide (ou 1 gtall) = tombe juste
+        – 10 photos + 1 gwide + 1 gtall = tombe juste
+        – 9 photos + 1 gwide + 2 gtall (configuration précédente) = tombe juste
+        – 12 photos normales = tombe juste
+    -->
+    <div class="gg">
+      <!-- Rangée 1 : 4 photos normales -->
+      <div class="gi"><img src="images/chasseauxoeufs.webp" alt="Chasse aux oeufs de Pâques" loading="lazy" width="400" height="400" /><div class="gov"></div></div>
+      <div class="gi"><img src="images/sortiemacval2.webp" alt="Sortie culturelle au musée" loading="lazy" width="400" height="400" /><div class="gov"></div></div>
+      <div class="gi"><img src="images/terrainneige.webp" alt="Enfants sous la neige" loading="lazy" width="400" height="400" /><div class="gov"></div></div>
+      <div class="gi"><img src="images/fetenoel2.webp" alt="Fête de Noël" loading="lazy" width="400" height="400" /><div class="gov"></div></div>
+      <!-- Rangée 2 : 1 photo paysage (wide = 2 cellules) + 2 photos normales -->
+      <div class="gi gwide"><img src="images/sortiethatrelafaille.webp" alt="Sortie au théâtre" loading="lazy" width="800" height="400" /><div class="gov"></div></div>
+      <div class="gi"><img src="images/sortiemacval3.webp" alt="Visite d'exposition artistique" loading="lazy" width="400" height="400" /><div class="gov"></div></div>
+      <div class="gi"><img src="images/repasvoisins2.webp" alt="Repas des voisins en plein air" loading="lazy" width="400" height="400" style="object-position:center 30%" /><div class="gov"></div></div>
+      <!-- Rangée 3 : 4 photos normales -->
+      <div class="gi"><img src="images/repasdesvoisins.webp" alt="Grand repas des voisins" loading="lazy" width="400" height="400" style="object-position:center 30%" /><div class="gov"></div></div>
+      <div class="gi"><img src="images/fetenoel4.webp" alt="Fête de Noël, joie des enfants" loading="lazy" width="400" height="400" /><div class="gov"></div></div>
+      <div class="gi"><img src="images/activitejardin.webp" alt="Atelier jardinage" loading="lazy" width="400" height="400" /><div class="gov"></div></div>
+      <div class="gi"><img src="images/fetenoel1.webp" alt="Distribution de cadeaux de Noël" loading="lazy" width="400" height="400" /><div class="gov"></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ DON ═══ -->
+<section id="don" class="don">
+  <div class="cnt">
+    <p class="ey">Agir avec nous</p>
+    <h2 class="h2">Votre don change des vies</h2>
+    <p class="lead">Comme beaucoup d'associations de quartier, nous dépendons en grande partie des crédits publics. Mais pour aller plus loin — offrir plus de sorties, plus d'ateliers, plus de moments de partage aux enfants et aux familles du Bois l'Abbé — nous avons besoin de vous. Chaque don privé nous donne la liberté d'innover et de grandir.</p>
+    <div class="amounts">
+      <button class="ab2" type="button" onclick="selAmt(this)"><span class="mn">10 €</span><div class="imp">1 livre offert</div></button>
+      <button class="ab2 active" type="button" onclick="selAmt(this)"><span class="mn">30 €</span><div class="imp">Une sortie culturelle</div></button>
+      <button class="ab2" type="button" onclick="selAmt(this)"><span class="mn">50 €</span><div class="imp">Un atelier pour 5 enfants</div></button>
+      <button class="ab2" type="button" onclick="selAmt(this)"><span class="mn">100 €</span><div class="imp">Un repas de quartier</div></button>
+    </div>
+    <a href="https://www.helloasso.com/associations/association-chaleur-et-partage" target="_blank" rel="noopener noreferrer" class="btn-ha">❤ Faire un don via HelloAsso</a>
+    <p class="don-note">Paiement sécurisé · Association loi 1901 · Reçu fiscal sur demande · <a href="#mentions">Mentions légales</a></p>
+  </div>
+</section>
+
+
+<!-- ═══ DEVENIR BENEVOLE ═══ -->
+<section id="benevole" class="benevole">
+  <div class="cnt">
+    <div class="g2">
+      <div class="fi">
+        <p class="ey">Rejoindre l'équipe</p>
+        <h2 class="h2">Devenez bénévole</h2>
+        <p style="color:var(--brown-m);margin-bottom:1.1rem">Chaleur et Partage vit grâce à l'engagement de ses bénévoles. Que vous ayez 2 heures par semaine ou davantage, votre aide est précieuse.</p>
+        <p style="color:var(--brown-m)">Pas besoin de diplôme particulier – juste de l'envie de contribuer et une bonne dose de chaleur humaine.</p>
+        <div class="roles">
+          <div class="role"><div class="rt">📚 Soutien scolaire</div><div class="rd">Aide aux devoirs, suivi d'élèves</div></div>
+          <div class="role"><div class="rt">🎨 Animation</div><div class="rd">Ateliers créatifs, sorties, événements</div></div>
+          <div class="role"><div class="rt">🍽️ Logistique</div><div class="rd">Organisation de repas et fêtes</div></div>
+          <div class="role"><div class="rt">💻 Communication</div><div class="rd">Réseaux sociaux, site, photos</div></div>
+        </div>
+      </div>
+      <div class="bform fi">
+        <h3>Je souhaite m'impliquer</h3>
+        <form action="mailto:chaleur.et.partage.assoc@gmail.com" method="post" enctype="text/plain">
+          <div class="fg"><label for="bv-nom">Prénom et nom</label><input type="text" id="bv-nom" name="nom" placeholder="Marie Dupont" required autocomplete="name" /></div>
+          <div class="fg"><label for="bv-email">Adresse email</label><input type="email" id="bv-email" name="email" placeholder="marie@exemple.fr" required autocomplete="email" /></div>
+          <div class="fg"><label for="bv-tel">Téléphone</label><input type="tel" id="bv-tel" name="telephone" placeholder="06 XX XX XX XX" autocomplete="tel" /></div>
+          <div class="fg">
+            <label for="bv-role">Domaine souhaité</label>
+            <select id="bv-role" name="domaine">
+              <option value="">-- Choisissez --</option>
+              <option value="soutien">Soutien scolaire</option>
+              <option value="animation">Animation / sorties</option>
+              <option value="logistique">Logistique / événements</option>
+              <option value="communication">Communication / réseaux</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="fg"><label for="bv-msg">Message (facultatif)</label><textarea id="bv-msg" name="message" placeholder="Présentez-vous en quelques mots…"></textarea></div>
+          <button type="submit" class="btn-sub">Envoyer ma candidature →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="contact">
+  <div class="cnt">
+    <div class="g2">
+      <div class="fi">
+        <p class="ey">Nous contacter</p>
+        <h2 class="h2">On est là pour vous</h2>
+        <p class="lead" style="margin-bottom:0">Une question, un projet à proposer, une idée ? Contactez-nous, nous serons ravis d'échanger.</p>
+        <div class="citems">
+          <div class="ci"><div class="cico">📍</div><div><div class="cl">Adresse</div><div class="cv">3 Villa Franche-Comté<br>94430 Chennevières-sur-Marne</div></div></div>
+          <div class="ci"><div class="cico">📞</div><div><div class="cl">Telephone</div><div class="cv"><a href="tel:+33614878398">06 14 87 83 98</a></div></div></div>
+          <div class="ci"><div class="cico">✉️</div><div><div class="cl">Email</div><div class="cv"><a href="mailto:chaleur.et.partage.assoc@gmail.com">chaleur.et.partage.assoc@gmail.com</a></div></div></div>
+          <div class="ci"><div class="cico">🗺️</div><div><div class="cl">Zone d'action</div><div class="cv">Chennevières-sur-Marne<br>et Champigny-sur-Marne</div></div></div>
+        </div>
+        <div class="socrow">
+          <a href="https://www.instagram.com/chaleur_et_partage" target="_blank" rel="noopener noreferrer" class="sb">📸 Instagram</a>
+          <a href="https://www.facebook.com/chaleuretpartage" target="_blank" rel="noopener noreferrer" class="sb">👍 Facebook</a>
+        </div>
+      </div>
+      <div class="cform fi">
+        <h3>Envoyer un message</h3>
+        <form action="mailto:chaleur.et.partage.assoc@gmail.com" method="post" enctype="text/plain">
+          <div class="fg"><label for="ct-nom">Votre nom</label><input type="text" id="ct-nom" name="nom" placeholder="Marie Dupont" required autocomplete="name" /></div>
+          <div class="fg"><label for="ct-email">Votre email</label><input type="email" id="ct-email" name="email" placeholder="marie@exemple.fr" required autocomplete="email" /></div>
+          <div class="fg"><label for="ct-objet">Objet</label><input type="text" id="ct-objet" name="objet" placeholder="Votre sujet…" /></div>
+          <div class="fg"><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" placeholder="Votre message…" required></textarea></div>
+          <button type="submit" class="btn-sub">Envoyer →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- MENTIONS LEGALES -->
+<section id="mentions">
+  <div class="cnt">
+    <div class="mi">
+      <h2>Mentions legales</h2>
+      <div class="mi-cols">
+        <div>
+          <h3>Editeur du site</h3>
+          <p>
+            Association <strong>Chaleur et Partage</strong> – Association loi 1901<br>
+            Bureaux : 3 Villa Franche-Comté, 94430 Chennevières-sur-Marne<br>
+            Siège social : 1 rue Clément Ader, 94430 Chennevières-sur-Marne<br>
+            Telephone : 06 14 87 83 98<br>
+            Email : chaleur.et.partage.assoc@gmail.com<br>
+            Numéro RNA / SIREN : <em>(à compléter)</em>
+          </p>
+          <h3>Hébergement</h3>
+          <p>GitHub Pages – GitHub, Inc., San Francisco, CA, USA – <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a></p>
+        </div>
+        <div>
+          <h3>Données personnelles (RGPD)</h3>
+          <p>Ce site ne collecte aucune donnée automatiquement. Les informations transmises via les formulaires ne sont pas partagées avec des tiers. Droit d'accès et de suppression : chaleur.et.partage.assoc@gmail.com</p>
+          <h3>Droit à l'image</h3>
+          <p>Les photos publiées ont été prises avec l'accord des personnes concernées ou de leurs représentants légaux (autorisation parentale écrite pour les mineurs). Pour toute demande de retrait : chaleur.et.partage.assoc@gmail.com</p>
+          <h3>Propriété intellectuelle</h3>
+          <p>Tous les contenus (textes, photos, logo) sont la propriété de l'association Chaleur et Partage. Toute reproduction sans autorisation écrite est interdite.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="fin">
+    <div class="ftop">
+      <div class="fbrand">
+        <a href="#accueil" class="nav-logo" style="color:white">
+          <img src="images/logo.png" alt="Logo" width="36" height="36"
+               onerror="this.outerHTML='<span style=&quot;width:36px;height:36px;border-radius:9px;background:#E8650A;color:white;display:flex;align-items:center;justify-content:center;flex-shrink:0&quot;>&#9829;</span>'" />
+          Chaleur et Partage
+        </a>
+        <p>Association de lien social au cœur du Bois l'Abbé, entre Chennevières-sur-Marne et Champigny-sur-Marne. Ensemble, on fait la différence.</p>
+      </div>
+      <div class="fc">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#soutien">Soutien scolaire</a></li>
+          <li><a href="#mission">Notre mission</a></li>
+          <li><a href="#actions">Nos actions</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#actualites">Actualités</a></li>
+          <li><a href="#don">Faire un don</a></li>
+          <li><a href="#benevole">Devenir bénévole</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="fc">
+        <h4>Nous suivre</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/chaleur_et_partage" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/chaleuretpartage" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.helloasso.com" target="_blank" rel="noopener">HelloAsso</a></li>
+        </ul>
+        <h4 style="margin-top:1.4rem">Contact</h4>
+        <ul>
+          <li><a href="tel:+33614878398">06 14 87 83 98</a></li>
+          <li><a href="mailto:chaleur.et.partage.assoc@gmail.com" style="word-break:break-all;font-size:.82rem">chaleur.et.partage.assoc@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2017-2026 Chaleur et Partage · Association loi 1901</span>
+      <span><a href="#mentions">Mentions légales</a> · <a href="#mentions">Données personnelles</a></span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+// Burger menu
+var burger=document.getElementById('burger'),menu=document.getElementById('nav-menu');
+burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.classList.toggle('open',o);burger.setAttribute('aria-expanded',String(o))});
+menu.querySelectorAll('a').forEach(function(l){l.addEventListener('click',function(){menu.classList.remove('open');burger.classList.remove('open');burger.setAttribute('aria-expanded','false')})});
+
+// Montants don
+function selAmt(el){document.querySelectorAll('.ab2').forEach(function(b){b.classList.remove('active')});el.classList.add('active')}
+
+// Scroll animations
+if('IntersectionObserver' in window){
+  var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}})},{threshold:0.08});
+  document.querySelectorAll('.fi').forEach(function(el){obs.observe(el)});
+}else{document.querySelectorAll('.fi').forEach(function(el){el.classList.add('vis')})}
+</script>
+
+</body>
+</html>
